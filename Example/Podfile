@@ -1,0 +1,13 @@
+use_frameworks!
+xcodeproj 'SwiftQRScanner.xcodeproj'
+platform :ios, '16.0'
+target 'SwiftQRScanner_Example' do
+  #pod 'SwiftQRScanner', :path => '/Users/liushuaibiao/Desktop'
+pod 'SwiftQRScanner', :git => ‘https://github.com/vinodiOS/SwiftQRScanner’
+
+  target 'SwiftQRScanner_Tests' do
+   inherit! :search_paths
+
+    
+  end
+end
